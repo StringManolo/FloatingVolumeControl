@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de Volumen"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/volumeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volumen: 50%"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnVolumeDown"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="－"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/btn_default_small"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btnVolumeUp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="＋"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/btn_default_small"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Cerrar"
+        android:textColor="@android:color/black"
+        android:background="@android:drawable/btn_default_small"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
